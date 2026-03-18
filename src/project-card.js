@@ -14,7 +14,9 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <h2 className="text-2xl font-bold">{title}</h2>
-            <h3 className="text-[1.25rem] md:text-right">{type}</h3>
+            <div className="absolute top-5 right-5 inline-flex items-center bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+              <h3>{type}</h3>
+            </div>
           </div>
           <h4 className="text-sm">{date}</h4>  
                  
