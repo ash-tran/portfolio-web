@@ -4,42 +4,49 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <div id="about" className="min-h-screen grid place-items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-[85rem] px-10 mb-10 w-full gap-x-25">
+    <div id="about" className="min-h-screen grid place-items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center px-15 mb-10 w-full">
 
         {/* BIO */}
         <div className="order-2 md:order-1">
-            <h2 className="text-[2rem] md:text-[3.5rem] font-bold mb-5 md:mt-0 text-start">ABOUT</h2>
+            <h2 className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">ABOUT.</h2>
             {/* SUBHEADING */}
             <h3 className="text-[1.50rem] mb-[1rem] md:text-[1.75rem] font-bold text-[#66615C]"> A developer who focuses on design, usability, and clean code.</h3>
-            <p className="text-justify text-[1rem]">
-            I’m originally from Lansing, MI, and graduated from Michigan State University in Spring 2024 with a degree in Computer Science and a minor in Business. 
+         
+            {/* LOCATION */}
+            <div className="inline-flex items-center gap-2 bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+              <span className="inline-block animate-pulse text-white">⌂</span>
+              <p className="text-sm md:text-base m-0">Waverly, MI</p>
+            </div>
+
+            <p className="text-justify text-[1rem] mt-5">
+            I’m originally from Lansing, MI, and graduated from <b>Michigan State University</b> in Spring 2024 with a degree in Computer Science and a minor in Business. 
             I'm enthusiastic about applying my skills and knowledge to create meaningful online experiences. 
             With a solid foundation in coding and a passion for design, I'm eager to contribute to innovative projects and continue learning from experienced professionals.
             </p>
           
             <br/>
             <p className="text-justify text-[1rem]">
-            Outside of coding, I enjoy horror movies, finding a good deal, and sharing everyday life with my partner, our cat, and our hamsters.
+            Outside of coding, I enjoy horror movies, thrifting, and sharing everyday life with my partner, our cat, and our hamsters.
             </p>
 
-            {/* CONTACT BUTTON*/}
+            {/* LINKS*/}
             <div className="mt-5">
-                <a
-                    href="#footer"
-                    
-                    className="underline-link flex font-bold text-[1.5rem] md:text-[2rem] text-[#333333]"
-                >
-                  ↗ CONTACT ME
-                 
-                </a>
-            </div>
+               <div className="flex flex-row gap-10">
+                        <a href="https://github.com/ash-tran" className="underline-link text-lg">
+                            <p className="text-2xl">GitHub →</p>
+                        </a>
 
+                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
+                            <p className="text-2xl">LinkedIn →</p>
+                        </a>
+                    </div>
+            </div>
         </div>
 
 
         {/* IMG */}
-        <div className="relative img-background w-full h-[35vh] md:w-[55vh] md:h-[55vh] mb-10 mt-5 md:my-0 order-1 md:order-2">
+        <div className="relative img-background w-full h-[35vh] md:w-[55vh] md:h-[55vh] mb-10 mt-5 md:mr-5 md:my-0 order-1 md:order-2 justify-self-end">
           <div className="absolute -top-5 -left-5 w-25 h-25 border-t-3 border-l-3 border-solid border-[#66615C]"></div>
           <img
             src="/roblox-headshot.png"

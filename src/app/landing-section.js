@@ -10,7 +10,7 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3 mt-15">
+    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3 mt-15 bg-[#f5f5f5]">
       <div className="relative justify-center flex flex-col">
 
         {/* GREETING */}
@@ -55,7 +55,7 @@ const LandingSection = () => {
             className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-45 justify-center bg-[#333333] cta-button"
             href="/ash-tran-resume.pdf"
           >
-            <span className="font-family: Arial, sans-serif;">↗</span> VIEW RESUME
+           VIEW RESUME →
           </a>
 
           <div className="w-0 h-0 border-l-8 mt-20 border-r-8 border-b-0 border-t-8 border-transparent border-t-black"></div>

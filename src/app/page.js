@@ -4,7 +4,7 @@ import Navigation from "./navigation";
 import AboutSection from "./about-section";
 import LandingSection from "./landing-section";
 import ExperienceSection from "./experience-section";
-import ContactFooter from '@/contact-form';
+import Footer from '@/footer';
 import CustomCursor from "@/custom-cursor";
 import ProjectCard from "@/project-card";
 import { useState, useEffect } from "react";
@@ -48,13 +48,22 @@ export default function Home() {
     );
   }
 
+  const AbyssInventoryData = {
+    title: "Abyss Inventory",
+    date: "MARCH 2026",
+    type: "WEB",
+    url: "https://abyssinventory.vercel.app",
+    specialties: ["TYPESCRIPT", "REACT", "VITE"],
+    description: "Track underwater inventory and browse detailed fish information."
+  };
+
   const FondrData = {
-    title: "Fondr – Relationship Tracker",
+    title: "Fondr",
     date: "AUGUST 2025",
     type: "MOBILE",
      url: "https://fondr.app",
     specialties: ["TYPESCRIPT", "REACT NATIVE", "EXPO", "SUPABASE"],
-    description: `This app is a collaborative space built for couples to save, organize, and share their favorite places, wishlist items, and meaningful milestones—all in one place. From a shared list of gift ideas, to a tracker for go-to date spots, to a timeline of relationship milestones, both partners can add and contribute as they plan intentionally and grow together.`
+    description: "Help couples organize and share memorable experiences together."
   };
 
   const VisionaryPhotoboothData = {
@@ -63,24 +72,19 @@ export default function Home() {
     type: "UX/UI",
     url: "https://visionarymi.com",
     specialties: ["PAGECLOUD CMS"],
-    description: `Involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
-      Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
-      The result is a more user-friendly site that drives increased traffic and customer engagement.`
+    description: "A clear and user-friendly web presence for a local business."
   };
   const AuditBuddyData = {
-    title: "Auditing Assistant Using Video AI Platforms",
+    title: "Audit Buddy",
     date: "JANUARY 2024",
     type: "WEB",
     url: "https://capstone.cse.msu.edu/2024-01/projects/urban-science/",
     specialties: ["JAVASCRIPT", "REACT", "FLASK", "FIREBASE", "OPENCV", "YOLOv3"],
-    description: `AuditBuddy automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
-                  This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
-                  The app generates detailed performance reports and enables users to compare data across multiple dealerships.`
+    description: "Streamline car dealership audits with automated analysis."
   };
 
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
-     
      <div className="fixed inset-0 pointer-events-none cursor-none z-[9999]">
       <CustomCursor></CustomCursor>
      </div>
@@ -92,7 +96,7 @@ export default function Home() {
       
         {/* EXTERNAL LINKS */}
         <div className="hidden md:flex fixed top-1/2 right-5 flex-col gap-5 z-50">
-              <a href="https://github.com/codedknife">
+              <a href="https://github.com/ash-tran">
                 <img src="/github-mark.png" alt="GitHub Icon" className="w-7 h-7 transition-transform duration-250 hover:scale-150" />
               </a>
 
@@ -107,21 +111,24 @@ export default function Home() {
         {/* ABOUT SECTION */}
         <AboutSection/>
         
-         {/* EXPERIENCE SECTION*/}
-        <div className="min-h-screen grid place-items-center w-full">
-          <div className="max-w-[85rem] w-full px-5 mb-10">
-            <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE</h2>
-                <ExperienceSection/>
-          </div>
-        </div>
-       
+        {/* EXPERIENCE SECTION*/}
+        <ExperienceSection/>
 
         {/* PORTFOLIO SECTION*/}
-        <div className="min-h-screen place-items-center">
-          <div className="px-5 mb-10 w-full max-w-[85rem]">
-          <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
+        <div className="min-h-screen grid place-items-center w-full">
+          <div className="px-15 mb-10 w-full">
+          <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 text-start">PORTFOLIO.</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2">
+
+            <ProjectCard 
+              title={AbyssInventoryData.title}
+              date={AbyssInventoryData.date}
+              type={AbyssInventoryData.type}
+              url={AbyssInventoryData.url}
+              specialties={AbyssInventoryData.specialties}
+              description={AbyssInventoryData.description}
+            />
 
             <ProjectCard 
               title={FondrData.title}
@@ -152,10 +159,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-       
       </main>
 
-      <ContactFooter/>
+      <Footer/>
     </div>
   );
 }

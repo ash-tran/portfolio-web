@@ -39,21 +39,26 @@ const ExperienceSection = () => {
       ];
 
   return (
-    
-    <div>
-      {jobs.map((job, index) => (
-        <div key={index}>
-          <JobCard
-            title={job.title}
-            employer={job.employer}
-            date={job.date}
-          />
-  
-          {index !== jobs.length - 1 && (
-            <div className="mb-3 relative h-3 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300"></div>
-          )}
+
+    <div className="min-h-screen grid place-items-center w-full">
+      <div className="px-15 mb-10 w-full">
+        <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE.</h2>
+        <div>
+          {jobs.map((job, index) => (
+            <div key={index}>
+              <JobCard
+                title={job.title}
+                employer={job.employer}
+                date={job.date}
+              />
+      
+              {index !== jobs.length - 1 && (
+                <div className="mb-3 relative h-3 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300"></div>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };

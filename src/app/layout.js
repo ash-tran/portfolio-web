@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Ashley Tran",
-  description: "Portfolio website",
+  description: "Portfolio Website",
 };
 
 export default function RootLayout({ children }) {
