@@ -116,7 +116,7 @@ export default function Home() {
 
         {/* PORTFOLIO SECTION*/}
         <div className="min-h-screen grid place-items-center w-full">
-          <div className="px-15 mb-10 w-full">
+          <div className="px-10 md:px-15 mb-10 w-full">
           <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 text-start">PORTFOLIO.</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2">

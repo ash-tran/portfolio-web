@@ -12,9 +12,9 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
         className="project-card md:h-[100%] bg-white border border-gray-300 p-5 justify-center text-left relative overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
       >
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold">{title}</h2>
-            <div className="absolute top-5 right-5 inline-flex items-center bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+            <div className="inline-flex bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
               <h3>{type}</h3>
             </div>
           </div>
@@ -27,7 +27,7 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
             {description}
           </p>
         </div>
-        <span className="absolute bottom-3 right-4 text-sm text-[#66615C] md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="flex justify-end text-sm text-[#66615C] md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           View Project →
         </span>
       </a>

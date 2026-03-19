@@ -72,12 +72,12 @@ export default function Navigation() {
                     <li><a href="#experience" className="nav-link text-5xl md:text-7xl font-bold md:pl-5 m-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>EXPERIENCE.</a></li>
                     <li><a href="#work" className="nav-link text-5xl md:text-7xl font-bold m-5 md:pl-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO.</a></li>
                     <div className="p-5 flex flex-row gap-10 md:ml-100">
-                        <a href="https://github.com/ash-tran" className="underline-link text-lg">
-                            <p className="text-2xl"> GitHub →</p>
+                        <a href="https://github.com/ash-tran" className="underline-link">
+                            <p className="text-[1.50rem] md:text-[1.75rem]"> GitHub →</p>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl"> LinkedIn →</p>
+                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link">
+                            <p className="text-[1.50rem] md:text-[1.75rem]"> LinkedIn →</p>
                         </a>
                         </div>
                 </ul>

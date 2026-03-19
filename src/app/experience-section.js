@@ -41,7 +41,7 @@ const ExperienceSection = () => {
   return (
 
     <div className="min-h-screen grid place-items-center w-full">
-      <div className="px-15 mb-10 w-full">
+      <div className="px-10 md:px-15 mb-10 w-full">
         <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE.</h2>
         <div>
           {jobs.map((job, index) => (

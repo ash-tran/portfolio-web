@@ -5,7 +5,7 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <div id="about" className="min-h-screen grid place-items-center w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center px-15 mb-10 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mt-10 md:mt-0 px-10 md:px-15 mb-10 w-full">
 
         {/* BIO */}
         <div className="order-2 md:order-1">
@@ -33,12 +33,12 @@ const AboutSection = () => {
             {/* LINKS*/}
             <div className="mt-5">
                <div className="flex flex-row gap-10">
-                        <a href="https://github.com/ash-tran" className="underline-link text-lg">
-                            <p className="text-2xl">GitHub →</p>
+                        <a href="https://github.com/ash-tran" className="underline-link">
+                            <p className="text-[1.50rem] md:text-[1.75rem]">GitHub →</p>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl">LinkedIn →</p>
+                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link">
+                            <p className="text-[1.50rem] md:text-[1.75rem]">LinkedIn →</p>
                         </a>
                     </div>
             </div>
