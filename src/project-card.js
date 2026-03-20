@@ -13,15 +13,15 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
       >
         <div>
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold">{title}</h2>
+            <h3 className="text-2xl font-bold">{title}</h3>
             <div className="inline-flex bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
-              <h3>{type}</h3>
+              <h4>{type}</h4>
             </div>
           </div>
           <h4 className="text-sm">{date}</h4>  
                  
           <div className="text-xs font-medium py-5">
-            {specialties.join(', ')}
+            <p>{specialties.join(', ')}</p>
           </div>
           <p>
             {description}

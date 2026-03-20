@@ -48,13 +48,13 @@ export default function Home() {
     );
   }
 
-  const AbyssInventoryData = {
-    title: "Abyss Inventory",
+  const AbyssToolkitData = {
+    title: "Abyss Toolkit",
     date: "MARCH 2026",
     type: "WEB",
-    url: "https://abyssinventory.vercel.app",
+    url: "https://abysstoolkit.vercel.app",
     specialties: ["TYPESCRIPT", "REACT", "VITE"],
-    description: "Track underwater inventory and browse detailed fish information."
+    description: "Track underwater inventory and browse detailed game information."
   };
 
   const FondrData = {
@@ -122,12 +122,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2">
 
             <ProjectCard 
-              title={AbyssInventoryData.title}
-              date={AbyssInventoryData.date}
-              type={AbyssInventoryData.type}
-              url={AbyssInventoryData.url}
-              specialties={AbyssInventoryData.specialties}
-              description={AbyssInventoryData.description}
+              title={AbyssToolkitData.title}
+              date={AbyssToolkitData.date}
+              type={AbyssToolkitData.type}
+              url={AbyssToolkitData.url}
+              specialties={AbyssToolkitData.specialties}
+              description={AbyssToolkitData.description}
             />
 
             <ProjectCard 

@@ -8,7 +8,7 @@ const JobCard = ({ title, employer, date }) => {
       <div className="transition bg-white border border-gray-300 md:shadow-md py-3 px-5 flex flex-col md:flex-row justify-between text-centermd:text-left md:h-[10vh]">
 
         <div>
-          <h2 className="text-2xl font-bold mb-1">{title}</h2>
+          <h3 className="text-2xl font-bold mb-1">{title}</h3>
           <div className="text-[1.25rem] md:hidden">{employer}</div>
           <h4 className="text-sm">{date}</h4>
         </div>
