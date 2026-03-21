@@ -94,8 +94,8 @@ export default function Home() {
 
         <Navigation />
       
-        {/* EXTERNAL LINKS */}
-        <div className="hidden md:flex fixed top-1/2 right-5 flex-col gap-5 z-50">
+        {/* EXTERNAL LINKS SIDE BAR*/}
+        <div className="hidden md:flex fixed top-1/2 right-0 mr-[1.5em] flex-col gap-5 z-50">
               <a href="https://github.com/ash-tran">
                 <img src="/github-mark.png" alt="GitHub Icon" className="w-7 h-7 transition-transform duration-250 hover:scale-150" />
               </a>
@@ -105,57 +105,58 @@ export default function Home() {
               </a>
         </div>
 
-        {/* LANDING SECTION */}
-        <LandingSection/>
+        <div>
+          {/* LANDING SECTION */}
+          <LandingSection/>
 
-        {/* ABOUT SECTION */}
-        <AboutSection/>
-        
-        {/* EXPERIENCE SECTION*/}
-        <ExperienceSection/>
+          {/* ABOUT SECTION */}
+          <AboutSection/>
+          
+          {/* EXPERIENCE SECTION*/}
+          <ExperienceSection/>
 
-        {/* PORTFOLIO SECTION*/}
-        <div className="min-h-screen grid place-items-center w-full">
-          <div className="px-10 md:px-15 mb-10 w-full">
-          <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 text-start">PORTFOLIO.</h2>
+          {/* PORTFOLIO SECTION*/}
+          <div className="min-h-screen grid place-items-center w-full">
+            <div className="px-[12.5%] mb-10 w-full">
+            <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 text-start">PORTFOLIO.</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <ProjectCard 
+                title={AbyssToolkitData.title}
+                date={AbyssToolkitData.date}
+                type={AbyssToolkitData.type}
+                url={AbyssToolkitData.url}
+                specialties={AbyssToolkitData.specialties}
+                description={AbyssToolkitData.description}
+              />
 
+              <ProjectCard 
+                title={FondrData.title}
+                date={FondrData.date}
+                type={FondrData.type}
+                url={FondrData.url}
+                specialties={FondrData.specialties}
+                description={FondrData.description}
+              />
+              
+              <ProjectCard 
+                title={VisionaryPhotoboothData.title}
+                date={VisionaryPhotoboothData.date}
+                type={VisionaryPhotoboothData.type}
+                url={VisionaryPhotoboothData.url}
+                specialties={VisionaryPhotoboothData.specialties}
+                description={VisionaryPhotoboothData.description}
+              />
+              
             <ProjectCard 
-              title={AbyssToolkitData.title}
-              date={AbyssToolkitData.date}
-              type={AbyssToolkitData.type}
-              url={AbyssToolkitData.url}
-              specialties={AbyssToolkitData.specialties}
-              description={AbyssToolkitData.description}
-            />
-
-            <ProjectCard 
-              title={FondrData.title}
-              date={FondrData.date}
-              type={FondrData.type}
-              url={FondrData.url}
-              specialties={FondrData.specialties}
-              description={FondrData.description}
-            />
-             
-             <ProjectCard 
-              title={VisionaryPhotoboothData.title}
-              date={VisionaryPhotoboothData.date}
-              type={VisionaryPhotoboothData.type}
-              url={VisionaryPhotoboothData.url}
-              specialties={VisionaryPhotoboothData.specialties}
-              description={VisionaryPhotoboothData.description}
-            />
-            
-          <ProjectCard 
-              title={AuditBuddyData.title}
-              date={AuditBuddyData.date}
-              type={AuditBuddyData.type}
-              url={AuditBuddyData.url}
-              specialties={AuditBuddyData.specialties}
-              description={AuditBuddyData.description}
-            />
+                title={AuditBuddyData.title}
+                date={AuditBuddyData.date}
+                type={AuditBuddyData.type}
+                url={AuditBuddyData.url}
+                specialties={AuditBuddyData.specialties}
+                description={AuditBuddyData.description}
+              />
+              </div>
             </div>
           </div>
         </div>

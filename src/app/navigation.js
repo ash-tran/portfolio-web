@@ -38,25 +38,23 @@ export default function Navigation() {
                 />
             </div>
 
-            {/* TOGGLE */}
-            <div className="flex items-center justify-between ml-5">
-                <div className="flex items-center space-x-2">
+            {/* NAVIGATION BAR */}
+            <div className="flex items-center justify-between ml-[1.5em] py-[1em]">
+                <div className="flex items-center">
                     <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
                 </div>
 
+                <div className="flex justify-end px-[1.5em] gap-5">
                 {/* STATUS INDICATOR*/}
-                <div className="absolute top-5 right-15 inline-flex items-center gap-2 bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+                <div className="inline-flex items-center justify-center gap-2 bg-[#333333] text-white px-5 py-1 rounded-full">
                     <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <p className="text-sm md:text-base m-0">Open for opportunities</p>
+                    <p className="text-sm md:text-base">Open for opportunities</p>
                 </div>
 
-               
-
-                <div className="flex justify-end p-5">
-    
+                {/* TOGGLE */}
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="text-[#333333] text-2xl focus:outline-none cursor-pointer px-1.5"
+                    className="text-[#333333] text-2xl focus:outline-none cursor-pointer"
                 >
                     {isMenuOpen ? "✕" : 
                     "☰"}
@@ -66,16 +64,15 @@ export default function Navigation() {
 
             {/* MENU */}
             {isMenuOpen && (
-            <nav className="pb-4">
-                <ul className="flex flex-col gap-4 w-full h-screen justify-center animation-slide-up gap-15">
-                    <li><a href="#about" className="nav-link text-5xl md:text-7xl font-bold md:pl-5 m-5 mb-1 md:ml-100" onClick={() => setIsMenuOpen(false)}>ABOUT.</a></li>
-                    <li><a href="#experience" className="nav-link text-5xl md:text-7xl font-bold md:pl-5 m-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>EXPERIENCE.</a></li>
-                    <li><a href="#work" className="nav-link text-5xl md:text-7xl font-bold m-5 md:pl-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO.</a></li>
-                    <div className="p-5 flex flex-row gap-10 md:ml-100">
+            <nav>
+                <ul className="flex flex-col w-full h-screen justify-center animation-slide-up gap-[5em]">
+                    <li><a href="#about" className="nav-link text-5xl md:text-7xl font-bold ml-[25%]" onClick={() => setIsMenuOpen(false)}>ABOUT.</a></li>
+                    <li><a href="#experience" className="nav-link text-5xl md:text-7xl font-bold ml-[25%]" onClick={() => setIsMenuOpen(false)}>EXPERIENCE.</a></li>
+                    <li><a href="#work" className="nav-link text-5xl md:text-7xl font-bold ml-[25%]" onClick={() => setIsMenuOpen(false)}>PORTFOLIO.</a></li>
+                    <div className="flex flex-row gap-10 ml-[25%]">
                         <a href="https://github.com/ash-tran" className="underline-link">
                             <p className="text-[1.50rem] md:text-[1.75rem]"> GitHub →</p>
                         </a>
-
                         <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link">
                             <p className="text-[1.50rem] md:text-[1.75rem]"> LinkedIn →</p>
                         </a>

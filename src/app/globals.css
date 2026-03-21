@@ -64,10 +64,6 @@ a, button {
   color: #66615C;
 }
 
-.nav-list li {
-  margin: 0 2.5rem;                
-}
-
 .img-background {
   background-color: #66615C;
   opacity: 100%;
@@ -90,7 +86,7 @@ a, button {
   white-space: nowrap;
   border-right: 2.5px solid white;
   width: 0;
-  animation: typing 1.50s steps(6, end) forwards, blink 0.75s step-end infinite;
+  animation: typing 1.50s steps(6, end) forwards, blink 0.5s step-end infinite;
 }
 
  @keyframes typing {
@@ -120,10 +116,10 @@ a, button {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;
+  height: 3.5px;
   width: 0;
   background-color: black;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.25s ease-in-out;
 }
 
 .underline-link:hover::after {
@@ -132,7 +128,7 @@ a, button {
 
 .project-card {
   background-color: white;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .project-card:hover {

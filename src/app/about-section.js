@@ -5,16 +5,15 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <div id="about" className="min-h-screen grid place-items-center w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mt-10 md:mt-0 px-10 md:px-15 mb-10 w-full">
-
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mt-10 md:mt-0 px-[12.5%] mb-10 w-full">
         {/* BIO */}
         <div className="order-2 md:order-1">
-            <h2 className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">ABOUT.</h2>
+            <h2 className="text-[2rem] md:text-[3.5rem] font-bold mt-5 text-start">ABOUT.</h2>
             {/* SUBHEADING */}
-            <h3 className="text-[1.50rem] mb-[1rem] md:text-[1.75rem] font-bold text-[#66615C]"> A developer who focuses on design, usability, and clean code.</h3>
+            <h3 className="text-[1.50rem] md:text-[2rem] mb-[1rem] font-bold text-[#66615C]"> A developer who focuses on design, usability, and clean code.</h3>
          
             {/* LOCATION */}
-            <div className="inline-flex items-center gap-2 bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-[#333333] text-white px-5 py-1 rounded-full">
               <span className="inline-block animate-pulse text-white">⌂</span>
               <p className="text-sm md:text-base m-0">Waverly, MI</p>
             </div>

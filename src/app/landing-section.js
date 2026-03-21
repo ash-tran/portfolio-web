@@ -10,7 +10,7 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3 mt-15 bg-[#f5f5f5]">
+    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-[12.5%] mt-15 bg-[#f5f5f5]">
       <div className="relative justify-center flex flex-col">
 
         {/* GREETING */}
@@ -19,7 +19,7 @@ const LandingSection = () => {
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
           }`}
         >
-          <span className="text-[2rem] sm:text-[3rem] text-left mt-25 md:mt-0 mb-5 md:mb-2 text-[#66615C] hidden md:block">
+          <span className="text-[2rem] sm:text-[3rem] text-left mt-25 md:mt-0 mb-5 md:mb-2 text-[#66615C]">
             HI, I'M
           </span>
         </p>
@@ -28,7 +28,7 @@ const LandingSection = () => {
         <h1
           className={`transition-all duration-700 ease-out delay-200 transform ${
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
-          } text-[4.5rem] md:text-[7.5rem] leading-[1.1] text-center font-bold`}
+          } text-[3.5em] md:text-[7.5em] text-center font-bold`}
         >
           ASHLEY TRAN.
         </h1>

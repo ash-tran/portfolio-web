@@ -13,8 +13,8 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
       >
         <div>
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-bold">{title}</h3>
-            <div className="inline-flex bg-[#333333] text-white px-5 py-1 my-1 md:my-0 rounded-full">
+            <h3 className="text-[1.50rem] md:text-[1.75rem] font-bold">{title}</h3>
+            <div className="inline-flex bg-[#333333] text-white px-5 py-1 rounded-full">
               <h4>{type}</h4>
             </div>
           </div>
